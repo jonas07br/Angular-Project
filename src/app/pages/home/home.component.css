@@ -1,0 +1,23 @@
+.articles{
+  display: flex;
+  width: 100%;
+}
+.articles-main{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  margin-left: 1%;
+}
+.articles-others{
+  margin-top: 5%;
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bigcards{
+  display: flex;
+  flex-direction: row;
+}
+
