@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [ngStyle]="{'background-color':bgColor}">
   <div class="infos-container">
     <div class="info" (click)="show()">
       <h4>{{projectName}}</h4>
@@ -17,7 +17,11 @@
       </p>
     </div>
     <div class="button-container">
-      <button class="button">🡽</button>
+
+      <a class="button" [routerLink]="['/project',projectId]">
+        🡽
+      </a>
+
     </div>
   </div>
 
