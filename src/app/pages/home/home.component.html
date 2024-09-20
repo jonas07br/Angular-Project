@@ -1,17 +1,26 @@
 <div class="articles">
   <div class="articles-main">
     <app-tittle-page></app-tittle-page>
-    <div class="bigcards">
-      <app-big-card></app-big-card>
-      <app-big-card></app-big-card>
+    <div class="bigcards" >
+      <app-big-card *ngFor="let item of projectsB"
+      [projectName]="item.projectName"
+      [projectDescription]="item.projectDescription"
+      [projectType]="item.projectType"
+      [projectId]="item.id"
+      ></app-big-card>
 
     </div>
 
 
   </div>
   <div class="articles-others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+    *ngFor="let item of projectsS"
+    [projectName]="item.projectName"
+    >
+
+    </app-small-card>
+
 
   </div>
 
